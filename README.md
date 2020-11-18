@@ -19,7 +19,7 @@ docker run --rm -it -p 8080:8080 zeako/candidate-matcher # latest
 
 With persistent sqlite3 db:
 ```sh
-docker run --rm -it -p 8080:8080 -e DB_FILE_PATH=/tmp/db.sqlite3 --mount type=bind,source=<dna-file-path>,target=/tmp/db.sqlite3 zeako/candidate-matcher # latest
+docker run --rm -it -p 8080:8080 -e DB_FILE_PATH=/tmp/db.sqlite3 --mount type=bind,source=<db-file-path>,target=/tmp/db.sqlite3 zeako/candidate-matcher # latest
 ```
 
 ## Sample
